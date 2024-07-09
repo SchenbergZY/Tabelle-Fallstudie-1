@@ -29,9 +29,9 @@ parts:
     chapters:
     - file: Markdown/Datenmanipulation
     - file: Markdown/Datenstruktur
-    - file: Markdown/R_Markdown
+    - file: notebook/R_Lerneinheit # Markdown/R_Markdown
     - file: Markdown/R_Übung_Reprodu
-    - file: notebook/R_Lerneinheit # Markdown/Übung_Zeitreihe_R
+    - file: Markdown/Übung_Zeitreihe_R
   - caption: 6. Zusammenfassung
     chapters:
     - file: Markdown/Reflexion
