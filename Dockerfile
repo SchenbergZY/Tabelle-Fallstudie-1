@@ -91,5 +91,5 @@ COPY . ${HOME}
 RUN chown -R ${NB_USER} ${HOME}
 #RUN chown -R ${NB_USER} /opt/conda
 USER ${NB_UID}
-RUN pip install -r requirements.txt
+# RUN pip install -r requirements.txt
 # WORKDIR "${HOME}"
