@@ -34,13 +34,14 @@ jobs:
     - name: Install IRkernel
       run: |
         Rscript -e "install.packages('IRkernel')"
-    - name: Debug
-      run: |
-        jupyter kernelspec --version
         
     - name: Install dependencies
       run: |
         pip install -r requirements.txt
+
+    - name: Debug
+      run: |
+        jupyter kernelspec --version
 
     - name: Print all kernels
       run: |
