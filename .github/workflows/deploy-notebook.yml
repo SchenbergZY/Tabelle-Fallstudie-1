@@ -33,7 +33,7 @@ jobs:
         
     - name: Install IRkernel
       run: |
-        Rscript -e "install.packages('IRkernel')"
+        Rscript -e "install.packages('IRkernel');IRkernel::installspec()"
         
     - name: Install dependencies
       run: |
