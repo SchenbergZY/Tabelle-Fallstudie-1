@@ -25,7 +25,12 @@ USER root
 #    ssl-cert \
 #    openssl \
 #    ca-certificates
-
+RUN apt-get update --yes && \
+    apt-get install --yes --no-install-recommends \
+    fonts-dejavu \
+    gfortran \
+    gcc && \
+    apt-get clean && rm -rf /var/lib/apt/lists/*
 
 
 USER ${NB_UID}
@@ -34,6 +39,35 @@ USER ${NB_UID}
 # r-e1071: dependency of the caret R package
 
 
+
+RUN mamba install --quiet --yes \
+    'r-base' \
+    'r-caret' \
+    'r-crayon' \
+    'r-devtools' \
+    'r-e1071' \
+    'r-forecast' \
+    'r-hexbin' \
+    'r-htmltools' \
+    'r-htmlwidgets' \
+    'r-irkernel' \
+    'r-nycflights13' \
+    #'r-randomforest' \
+    'r-rcurl' \
+    'r-rmarkdown' \
+    'r-rodbc' \
+    'r-rsqlite' \
+    'r-shiny' \
+    #'r-tidyverse' \
+    #'r-bit' \
+    #'r-bit64' \
+    #'r-googledrive' \
+    #'r-googlesheets4' \
+    # 'tensorflow' \
+    'unixodbc' && \
+    mamba clean --all -f -y && \
+    fix-permissions "${CONDA_DIR}" && \
+    fix-permissions "/home/${NB_USER}"
 
 # `rpy2` and `r-tidymodels` are not easy to install under aarch64
 # RUN set -x && \
@@ -60,4 +94,3 @@ RUN chown -R ${NB_USER} ${HOME}
 USER ${NB_UID}
 # RUN pip install -r requirements.txt
 # WORKDIR "${HOME}"
-
