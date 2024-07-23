@@ -3,27 +3,25 @@
 ## 1. Edit .github/workflows/deploy-book.yml
 
 ###    Adding R installation after python setup announcement.
-    `
+
     - name: Set up R 
       uses: r-lib/actions/setup-r@v2
         
     - name: Install IRkernel
       run: |
         Rscript -e "install.packages('IRkernel')"
-    `
 
 ###    Register IRkernel after pip install requirments.
-    `
+
     - name: Register IRkernel
       run: |
         Rscript -e "IRkernel::installspec()"
-    `
+
 
 ## 2. Add a new Dockerfile to root dir
 
 ## 3. Activate Rocket bottom in _config.yml
 
-    `
     launch_buttons:
       notebook_interface: jupyterlab
       colab_url: "https://colab.research.google.com"
@@ -52,16 +50,16 @@
     jupyter:
     widgets:
       enable: true
-    `
+
 
 ## 4. First upload R_Lerneinheit.ipynb to notebook dir. Then replace corresponding md to ipynb file in _toc.yml
-    `
+
     - caption: 5. Datenmanipulation
       chapters:
       - file: Markdown/Datenmanipulation
       - file: Markdown/Datenstruktur
       - file: notebook/R_Lerneinheit # Markdown/R_Markdown
-    `
+
 
     
 
