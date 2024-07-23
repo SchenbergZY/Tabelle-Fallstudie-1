@@ -2,7 +2,7 @@
 
 ## 1. Edit .github/workflows/deploy-book.yml
 
-    Adding R installation after python setup announcement.
+###    Adding R installation after python setup announcement.
     `
     - name: Set up R 
       uses: r-lib/actions/setup-r@v2
@@ -12,7 +12,7 @@
         Rscript -e "install.packages('IRkernel')"
     `
 
-    Register IRkernel after pip install requirments.
+###    Register IRkernel after pip install requirments.
     `
     - name: Register IRkernel
       run: |
