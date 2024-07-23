@@ -20,7 +20,7 @@
 
 ## 2. Add a new Dockerfile to root dir
 
-## 3. Activate Rocket bottom in _config.yml
+## 3. Edit _config.yml to activate Rocket botton
 
     launch_buttons:
       notebook_interface: jupyterlab
@@ -58,7 +58,7 @@
       chapters:
       - file: Markdown/Datenmanipulation
       - file: Markdown/Datenstruktur
-      - file: notebook/R_Lerneinheit # Markdown/R_Markdown
+      - file: notebook/R_Lerneinheit # Markdown/R_Markdown, replacement here
 
 
     
