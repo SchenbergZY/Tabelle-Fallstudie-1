@@ -10,3 +10,10 @@
 
 ## 3.2 Function edit()
   This function has no effect running under Colab/Binder when trigger. However in Windows command line, a window will pop out to let you edit the dataframe parameter on fly.
+
+# 4. Using Experience under Colab
+  TBD.
+# 5. Using Experience under Colab
+  TBD.
+# 6. Using Experience under Live Code
+  Waiting for long time with no response.
