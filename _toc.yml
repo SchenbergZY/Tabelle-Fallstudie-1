@@ -30,7 +30,7 @@ parts:
     - file: Markdown/Datenmanipulation
     - file: Markdown/Datenstruktur
     - file: notebook/R_Lerneinheit # Markdown/R_Markdown
-    - file: notebook/R_Übung_Reprodu # Markdown/R_Übung_Reprodu
+    - file: Markdown/R_Übung_Reprodu # notebook/R_Übung_Reprodu # Markdown/R_Übung_Reprodu
     - file: Markdown/Übung_Zeitreihe_R
   - caption: 6. Zusammenfassung
     chapters:
