@@ -33,8 +33,10 @@
 ## 3.4 Using Experience under Live Code
   Waiting for long time with no response.
 
-# 4.  User Experience of  ** Reproduzierbarkeit Nationaler Bildungsbericht**
-  TBD
+# 4.  User Experience of  Reproduzierbarkeit Nationaler Bildungsbericht
+  1. Convert back to the German-specific letter
+  2. left-strip the space of column "Angestelltenverhaeltnis"
+  3. Convert column "Personalgruppe" to "Arbeitsverhältnis"
 
 # 5.  User Experience of  **3rd ipynb**
   TBD
