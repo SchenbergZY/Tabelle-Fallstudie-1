@@ -12,8 +12,22 @@
   This function has no effect running under Colab/Binder when trigger. However in Windows command line, a window will pop out to let you edit the dataframe parameter on fly.
 
 # 4. Using Experience under Colab
-  TBD.
-# 5. Using Experience under Colab
-  TBD.
+  1. User needs to upload the CSV file
+  2. tidyverse pre-installed so just run installing takes a short time
+  3. running cell `head(data_csv)` after dataframe loaded takes infinite time as some text in the origin CSV file is not UTF-8 encoded, and user has to stop running the cell. After that user need to rerun `library(tidyverse)` and data_csv read command again. Otherwise there will be other bugs in showing the dataframe loaded
+  4. choose.files() not work in Colab
+  5. running `?read.csv2` pop up a window at the right side of the webpage
+  6. `show(data_csv_3)` not work because nothing called data_csv_3 defined
+  7. pandoc pre-installed so just run installing takes a short time
+  8. `edit(Tabellendaten)` not work in Colab
+# 5. Using Experience under Binder
+  1. User needs to upload the CSV file
+  2. tidyverse not-installed so run installing takes a long time
+  3. running cell `head(data_csv)` after dataframe loaded takes long time as some text in the origin CSV file is not UTF-8 encoded, and user has to stop running the cell. After that user need to rerun `library(tidyverse)` and data_csv read command again and skip `head(data_csv)`. Otherwise there will be other bugs in showing the dataframe loaded
+  4. choose.files() not work in Binder
+  5. running `?read.csv2` pop up a window at the right side of the webpage
+  6. `show(data_csv_3)` not work because nothing called data_csv_3 defined
+  7. pandoc not installed so run installing takes a while
+  8. `edit(Tabellendaten)` not work in Binder
 # 6. Using Experience under Live Code
   Waiting for long time with no response.
