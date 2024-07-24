@@ -44,7 +44,7 @@
     #    - tasklist
     
     # Files to exclude from the build
-    exclude_patterns: [nlp-enrichment/enrichment_tweaked.ipynb, data-input/aux/*, word_search/parse_conll_make_search.ipynb, README.md]
+    exclude_patterns: [nlp-enrichment/enrichment_tweaked.ipynb, data-input/aux/*, word_search/parse_conll_make_search.ipynb, README.md, Markdown/R_Markdown.md, Documentation.md]
     
     # Enable interactive widgets
     jupyter:
